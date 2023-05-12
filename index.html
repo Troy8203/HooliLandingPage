@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d6efd" />
     <title>Hooli</title>
     <link rel="icon" type="image/x-icon" href="./resource/img/icon2.svg" />
     <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
@@ -16,84 +17,96 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark"
-      data-bs-theme="dark"
-    >
-      <div class="container-md">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./resource/img/logo_light.svg"
-            alt="Logo"
-            class="d-inline-block align-text-top"
-            id="img_logo"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link disabled">Disabled</a>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-md">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./resource/img/logo_light.svg"
+              alt="Logo"
+              class="d-inline-block align-text-top"
+              id="img_logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled">Disabled</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <!-- Contenido de tu página -->
-    <div class="container my-3">
-      <div class="row row-cols-1 row-cols-md-2">
-        <div class="col d-flex align-items-center text-center text-lg-start">
-          <div>
-            <h1 class="fw-bold">
-              Transformando ideas en soluciones digitales de vanguardia
-            </h1>
-            <h4 class="fw-light fs-5">
-              Potenciamos tu negocio con tecnología innovadora y personalizada,
-              brindando soluciones de software que impulsan el crecimiento y la
-              eficiencia de tu empresa.
-            </h4>
+    <main class="main container-fluit p-0">
+      <div
+        class="container-fluit py-4 py-md-2 py-lg-0 px-5 main__container text-light"
+      >
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col d-flex align-items-center text-center text-lg-start">
+            <div>
+              <h1 class="fw-bold">
+                Transformando ideas en soluciones digitales de vanguardia
+              </h1>
+              <h5 class="fw-light fs-6 fs-md-5">
+                Potenciamos tu negocio con tecnología innovadora y
+                personalizada, brindando soluciones de software que impulsan el
+                crecimiento y la eficiencia de tu empresa.
+              </h5>
+              <button type="button" class="btn btn-dark text-uppercase px-4">
+                ver más
+              </button>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-center">
+            <img
+              src="./resource/img/computer_hooli.png"
+              class="img-fluid"
+              alt="devices hooli"
+            />
           </div>
         </div>
-
-        <div class="col d-flex align-items-center">
-          <img
-            src="./resource/img/computer_hooli.png"
-            class="img-fluid"
-            alt="devices hooli"
-          />
-        </div>
       </div>
-    </div>
+    </main>
 
     <footer class="container-fluit bg-dark text-white py-2">
-      <div class="container d-flex flex-column flex-md-row flex-wrap justify-content-center justify-content-md-between align-items-center px-2">
+      <div
+        class="container d-flex flex-column flex-md-row flex-wrap justify-content-center justify-content-md-between align-items-center px-2"
+      >
         <div class="d-flex align-items-center gap-2 flex-nowrap">
-          <img src="./resource/img/logo_light.svg" width="65px" height="65px" alt="logo_footer">
+          <img
+            src="./resource/img/logo_light.svg"
+            width="65px"
+            height="65px"
+            alt="logo_footer"
+          />
           <span>© 2023 Company, Inc</span>
         </div>
         <div class="d-flex align-items-center gap-2">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link disabled">Disabled</a>
         </div>
       </div>
     </footer>
-    
 
     <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script
