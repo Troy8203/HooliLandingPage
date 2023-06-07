@@ -35,7 +35,7 @@ A continuación se observa nuestra bases de datos almacenada de las personas que
 
 ### Con Html
 
-<img src="https://i.postimg.cc/76K5W9Gj/popCat.gif" alt="PopCat"/>
+<img src="../resource/img/img_m1.jpg" alt="PopCat"/>
 
 ```markdown
 <img src="img.jpg" alt="Texto Alternativo"/>
