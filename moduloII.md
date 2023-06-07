@@ -14,7 +14,7 @@ Con el empleo del modelo espiral, el software se desarrolla en una serie de entr
 
 Un modelo en espiral es dividido por el equipo de software en un conjunto de actividades estructurales. Para fines ilustrativos, se utilizan las actividades estructurales generales ya analizadas. Cada una de ellas representa un segmento de la trayectoria espiral ilustrada en la figura:
 
-<img src="../resource/modulo2/img1.png">
+<img src=".//resource/modulo1/img2.png">
 
 Al comenzar el proceso evolutivo, el equipo de software realiza actividades implícitas en un circuito alrededor de la espiral en el sentido horario, partiendo del centro. El riesgo se considera
 conforme se desarrolla cada revolución. En cada paso evolutivo se marcan puntos
@@ -96,7 +96,7 @@ En resumen, es para tener en cuenta los riesgos de cada uno de los ámbitos.
 Planificar un proyecto con esta metodología es a menudo imposible, debido a la incertidumbre en el número de iteraciones que serán necesarias. En este contexto la evaluación de riesgos es de la mayor importancia y, para grandes proyectos, dicha evaluación requiere la intervención de profesionales de gran experiencia.
 El IEEE clasifica al desarrollo en espiral como modelo no operativo en sus clasificaciones de MCV.​
 
-# 2. Análisis y diseño estructurado
+## Análisis y diseño estructurado
 
 El Análisis Estructurado (SA) en ingeniería de software y su técnica aliada, Diseño estructurado (SD), es un conjunto de métodos orientados a analizar y convertir requisitos de negocio en especificaciones y en última instancia, programas informáticos, configuraciones de hardware y procedimientos manuales relacionados.
 
@@ -199,55 +199,52 @@ Por ejemplo, nuestra lista de acontecimientos para el Sistema de Pedido de Libro
 
 Pero ¿Qué tal si no llega a tiempo (por ejemplo, una semana después de la fecha prometida por el impresor)? ¿Qué debería hacer el sistema?, Por lo que se necesitaría un acontecimiento adicional iniciado por el sistema para hacer que se comunique con el impresor y localice el origen del retraso.
 
-3.  Diagrama de contexto.
-
-    Es un caso especial de diagrama de flujo de datos, en donde una sola burbuja representa todo el sistema.
-    La figura muestra un diagrama de contexto de un sistema de pedidos de libros.
-
+## Diagrama de contexto.
+Es un caso especial de diagrama de flujo de datos, en donde una sola burbuja representa todo el sistema.
+La figura muestra un diagrama de contexto de un sistema de pedidos de libros.
     <img src="./resource/modulo2/img3.png">
 
-    Características importantes:
+###Características importantes:
+1. Las personas, organizaciones y sistemas con los que se comunica el sistema. Se conocen como terminadores.
+2. Los datos que el sistema recibe del mundo exterior y que deben procesarse de alguna forma.
+3. Los datos que el sistema produce y que se envían al mundo exterior.
+4. Los almacenes de datos que el sistema comparte con los terminadores. Estos almacenes de datos se crean fuera del sistema para su uso, o bien son creados en él y usados fuera.
+5. La frontera entre el sistema y el resto del mundo.
 
-    1. Las personas, organizaciones y sistemas con los que se comunica el sistema. Se conocen como terminadores.
-    2. Los datos que el sistema recibe del mundo exterior y que deben procesarse de alguna forma.
-    3. Los datos que el sistema produce y que se envían al mundo exterior.
-    4. Los almacenes de datos que el sistema comparte con los terminadores. Estos almacenes de datos se crean fuera del sistema para su uso, o bien son creados en él y usados fuera.
-    5. La frontera entre el sistema y el resto del mundo.
+El diagrama de contexto consiste en terminadores, flujos de datos y flujos de control, almacenes de datos y un solo proceso que representa a todo el sistema.
 
-    El diagrama de contexto consiste en terminadores, flujos de datos y flujos de control, almacenes de datos y un solo proceso que representa a todo el sistema.
+La parte más fácil del diagrama de contexto es el proceso; como hemos visto, consiste en una sola burbuja.
+El nombre dentro del proceso suele ser el nombre del sistema completo o un acrónimo convenido.
+Ejemplo: Nombre típico de proceso para un diagrama de contexto
 
-    La parte más fácil del diagrama de contexto es el proceso; como hemos visto, consiste en una sola burbuja.
-    El nombre dentro del proceso suele ser el nombre del sistema completo o un acrónimo convenido.
-    Ejemplo: Nombre típico de proceso para un diagrama de contexto
+<img src="./resource/modulo2/img4.png">
 
-    <img src="./resource/modulo2/img4.png">
+Los terminadores se representan con rectángulos en el diagrama de contexto. Se comunican directamente con el sistema a través de flujos de datos o de control.
 
-    Los terminadores se representan con rectángulos en el diagrama de contexto. Se comunican directamente con el sistema a través de flujos de datos o de control.
+Comunicación directa entre terminado y sistema
 
-    Comunicación directa entre terminado y sistema
+<img src="./resource/modulo2/img5.png">
 
-    <img src="./resource/modulo2/img5.png">
+Comunicación a través de un almacén externo
 
-    Comunicación a través de un almacén externo
+<img src="./resource/modulo2/img6.png">
 
-    <img src="./resource/modulo2/img6.png">
+Punto en consideración de los terminadores:
 
-    Punto en consideración de los terminadores:
+1. Algunos terminadores tienen un buen número de entradas y salidas. Para evitar un diagrama innecesariamente atiborrado conviene dibujar el terminador más de una vez.
+2. Los terminadores duplicados se marcan con un asterisco.
+3. Cuando el terminador es una persona individual, generalmente es preferible indicar el rol que desempeña, más que su identidad.
+4. Dado que estamos interesados en desarrollar un modelo esencial del sistema, es importante distinguir entre fuente y manejadores.
 
-    1. Algunos terminadores tienen un buen número de entradas y salidas. Para evitar un diagrama innecesariamente atiborrado conviene dibujar el terminador más de una vez.
-    2. Los terminadores duplicados se marcan con un asterisco.
-    3. Cuando el terminador es una persona individual, generalmente es preferible indicar el rol que desempeña, más que su identidad.
-    4. Dado que estamos interesados en desarrollar un modelo esencial del sistema, es importante distinguir entre fuente y manejadores.
+### Almacenes de datos
 
-    ### Almacenes de datos
+Un manejador es un mecanismo, dispositivo, medio físico usado para transportar datos hacia o fuera del sistema. Dado que a menudo, dichos manejadores son familiares y visibles para los usuarios de la implantación actual de un sistema, existe la tendencia a mostrar al manejador, en lugar de la verdadera fuente de los datos
 
-    Un manejador es un mecanismo, dispositivo, medio físico usado para transportar datos hacia o fuera del sistema. Dado que a menudo, dichos manejadores son familiares y visibles para los usuarios de la implantación actual de un sistema, existe la tendencia a mostrar al manejador, en lugar de la verdadera fuente de los datos
+### Flujos
 
-    ### Flujos
-
-    - Flujos de control.-
-      Los flujos que aparecen en el diagrama de contexto modelan datos que entran y salen del sistema, además de las señales de control que recibe o genera.
-    - Los flujos de datos se incluyen en el diagrama de contexto si se ocupan para detectar un acontecimiento en el ambiente al que deba responder el sistema, o si se ocupan (como datos) para producir una respuesta.
+- Flujos de control.-
+    Los flujos que aparecen en el diagrama de contexto modelan datos que entran y salen del sistema, además de las señales de control que recibe o genera.
+- Los flujos de datos se incluyen en el diagrama de contexto si se ocupan para detectar un acontecimiento en el ambiente al que deba responder el sistema, o si se ocupan (como datos) para producir una respuesta.
 
 ## El modelo de comportamiento
 
