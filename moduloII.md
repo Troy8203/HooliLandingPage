@@ -16,7 +16,6 @@ Un modelo en espiral es dividido por el equipo de software en un conjunto de act
 
 <img src="./resource/modulo2/img1.png">
 
-
 Al comenzar el proceso evolutivo, el equipo de software realiza actividades implícitas en un circuito alrededor de la espiral en el sentido horario, partiendo del centro. El riesgo se considera
 conforme se desarrolla cada revolución. En cada paso evolutivo se marcan puntos
 de referencia puntuales: combinación de productos del trabajo y condiciones que se encuentran
