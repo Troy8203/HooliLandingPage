@@ -140,29 +140,28 @@ En un sistema grande se puede tomar en cuenta una cantidad de factores cuando se
 - Deseo del usuario por minimizar gastos operativos de alguna área de su negocio. La mayor parte de las organizaciones que tienen ordenadores desde hace tiempo aprovecharon las oportunidades obvias de reducir el personal de oficina.
 
 - Deseo del usuario para lograr alguna ventaja estratégica para la línea de productos o áreas de negocios que opera.
-
+### El modelo ambiental consta de tres componentes:
 - Un buen ejemplo de esto son las líneas aéreas donde la mejor información acerca de tendencias del mercado y preferencias de los clientes pueden llevar a costos de pasajes e itinerarios de aerolíneas más eficientes.
 
-### El modelo ambiental consta de tres componentes:
+
 
 1.  Declaración de propósitos.
+  Es la declaración textual breve y concisa del propósito del sistema, dirigida al nivel administrativo superior, la administración de los usuarios, y otros que no están directamente involucrados con el desarrollo del sistema.
 
-    Es la declaración textual breve y concisa del propósito del sistema, dirigida al nivel administrativo superior, la administración de los usuarios, y otros que no están directamente involucrados con el desarrollo del sistema.
-
-    Ejemplo de la declaración de propósito típica:
-    El propósito del Sistema de Procesamiento de Libros Ajax es manejar todos los detalles de los pedidos de los libros de los clientes, además del envío, facturación y cobro retroactivo a clientes con facturas vencidas.
-    La información acerca de los pedidos de los libros debe estar disponible para otros sistemas, tales como mercadeo, ventas y contabilidad
+  Ejemplo de la declaración de propósito típica:
+  El propósito del Sistema de Procesamiento de Libros Ajax es manejar todos los detalles de los pedidos de los libros de los clientes, además del envío, facturación y cobro retroactivo a clientes con facturas vencidas.
+  La información acerca de los pedidos de los libros debe estar disponible para otros sistemas, tales como mercadeo, ventas y contabilidad
 
 2.  Lista de acontecimientos
 
-    Es una lista narrativa de los estímulos que ocurren en el mundo exterior a los cuales el sistema debe responder.
+  Es una lista narrativa de los estímulos que ocurren en el mundo exterior a los cuales el sistema debe responder.
 
-    A continuación se muestra una lista de acontecimientos para el sistema de pedidos de libros.
+  A continuación se muestra una lista de acontecimientos para el sistema de pedidos de libros.
 
-    1. Un cliente hace un pedido (F).
-    2. Un cliente cancela un pedido (F).
-    3. La administración pide un reporte de ventas (T).
-    4. Llega un pedido de reimpresión de un libro al almacén (C).
+  1. Un cliente hace un pedido (F).
+  2. Un cliente cancela un pedido (F).
+  3. La administración pide un reporte de ventas (T).
+  4. Llega un pedido de reimpresión de un libro al almacén (C).
 
 #### F,T,C - flujo, temporal, o de control
 
@@ -184,12 +183,10 @@ Construcción de la lista de acontecimiento
 La lista de acontecimientos es un listado textual sencillo de los acontecimientos del ambiente a los cuales debe responder el sistema. Al crear la lista de acontecimiento se debe asegurar de distinguir entre un acontecimiento y un flujo relacionado con un acontecimiento.
 
 Por ejemplo, lo siguiente probablemente no sea un acontecimiento:
-
-            "El sistema recibe el pedido del cliente"
+  "El sistema recibe el pedido del cliente"
 
 Más bien, es el flujo de datos de entrada mediante el cual el sistema se da cuenta de que ha ocurrido el acontecimiento. Un nombre más apropiado para el acontecimiento sería:
-
-            "El cliente hace un pedido"
+  "El cliente hace un pedido"
 
 La manera más fácil de identificar los acontecimientos para un sistema es visualizarlo en acción: examinar cada terminador y preguntar qué efecto pueden tener sus acciones sobre el sistema.
 
@@ -204,7 +201,7 @@ Es un caso especial de diagrama de flujo de datos, en donde una sola burbuja rep
 La figura muestra un diagrama de contexto de un sistema de pedidos de libros.
     <img src="./resource/modulo2/img3.png">
 
-###Características importantes:
+### Características importantes:
 1. Las personas, organizaciones y sistemas con los que se comunica el sistema. Se conocen como terminadores.
 2. Los datos que el sistema recibe del mundo exterior y que deben procesarse de alguna forma.
 3. Los datos que el sistema produce y que se envían al mundo exterior.
