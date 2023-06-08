@@ -6,7 +6,7 @@ permalink: moduloII
 
 # MODULO II
 
-## Metodología espiral
+## 🌀 Metodología espiral
 
 Propuesto en primer lugar por Barry Boehm, el modelo espiral es un modelo evolutivo del proceso del software y se acopla con la naturaleza iterativa de hacer prototipos con los aspectos controlados y sistémicos del modelo de cascada. Tiene el potencial para hacer un desarrollo rápido de versiones cada vez más completas.
 
@@ -31,7 +31,7 @@ cómputo. Entonces, el primer circuito alrededor de la espiral quizá represente
 de desarrollo del concepto” que comienza en el centro de la espiral y continúa por iteraciones
 múltiples hasta que queda terminado el desarrollo del concepto. Si el concepto va a desarrollarse en un producto real, el proceso sigue hacia fuera de la espiral y comienza un “proyecto de desarrollo de producto nuevo”. El nuevo producto evolucionará a través de cierto número de iteraciones alrededor de la espiral. Más adelante puede usarse un circuito alrededor de la espiral para que represente un “proyecto de mejora del producto”. En esencia, la espiral, cuando se caracteriza de este modo, sigue operativa hasta que el software se retira. Hay ocasiones en las que el proceso está inmóvil, pero siempre que se inicia un cambio comienza en el punto de entrada apropiado (por ejemplo, mejora del producto).
 
-## Ciclos o iteraciones
+## 🔄 Ciclos o iteraciones
 
 En cada vuelta o iteración hay que tener en cuenta:
 
@@ -50,7 +50,7 @@ Este sistema es muy utilizado en proyectos grandes y complejos como puede ser, p
 
 Al ser un modelo de Ciclo de Vida orientado a la gestión de riesgo se dice que uno de los aspectos fundamentales de su éxito radica en que el equipo que lo aplique tenga la necesaria experiencia y habilidad para detectar y catalogar correctamente los riesgos.
 
-## Tareas
+## ✅ Tareas
 
 Para cada ciclo habrá cuatro actividades:
 
@@ -59,50 +59,50 @@ Para cada ciclo habrá cuatro actividades:
 3. Desarrollar y probar
 4. Planificación
 
-### Determinar o fijar objetivos
+### 🎯 Determinar o fijar objetivos
 
 - Fijar también los productos definidos a obtener: requisitos, especificación, manual de usuario.
 - Fijar las restricciones.
 - Identificación de riesgos del proyecto y estrategias alternativas para evitarlos.
 - Hay una cosa que solo se hace una vez: planificación inicial.
 
-### Desarrollar, verificar y validar (probar)
+### 🔍 Desarrollar, verificar y validar (probar)
 
 - Tareas de la actividad propia y de prueba.
 - Análisis de alternativas e identificación de resolución de riesgos.
 - Dependiendo del resultado de la evaluación de los riesgos, se elige un modelo para el desarrollo, el que puede ser cualquiera de los otros existentes, como formal, evolutivo, cascada, etc. Así, por ejemplo, si los riesgos en la interfaz de usuario son dominantes, un modelo de desarrollo apropiado podría ser la construcción de prototipos evolutivos. Si los riesgos de protección son la principal consideración, un desarrollo basado en transformaciones formales podría ser el más apropiado.
 
-### Análisis y evaluación del riesgo
+### ⚠️ Análisis y evaluación del riesgo
 
 - Se lleva a cabo el estudio de las causas de las posibles amenazas y probables eventos no deseados y los daños y consecuencias que éstas puedan producir. Se evalúan alternativas. Se debe tener un prototipo antes de comenzar a desarrollar y probar.
 
 En resumen, es para tener en cuenta los riesgos de cada uno de los ámbitos.
 
-## Ventajas
+## 👍 Ventajas
 
 - El análisis del riesgo se hace de forma explícita y clara.
 - Une los mejores elementos de los restantes modelos.
 - Reduce riesgos del proyecto.
 - Incorpora objetivos de calidad.
 
-## Desventajas
+## 👎 Desventajas
 
 - Genera mucho tiempo en el desarrollo del sistema
 - Es un modelo costoso en recursos
 - Requiere experiencia en la identificación de riesgos
 
-## Inconvenientes
+## ⚠️ Inconvenientes
 
 Planificar un proyecto con esta metodología es a menudo imposible, debido a la incertidumbre en el número de iteraciones que serán necesarias. En este contexto la evaluación de riesgos es de la mayor importancia y, para grandes proyectos, dicha evaluación requiere la intervención de profesionales de gran experiencia.
 El IEEE clasifica al desarrollo en espiral como modelo no operativo en sus clasificaciones de MCV.​
 
-## Análisis y diseño estructurado
+## 📐 Análisis y diseño estructurado
 
 El Análisis Estructurado (SA) en ingeniería de software y su técnica aliada, Diseño estructurado (SD), es un conjunto de métodos orientados a analizar y convertir requisitos de negocio en especificaciones y en última instancia, programas informáticos, configuraciones de hardware y procedimientos manuales relacionados.
 
 Las técnicas de análisis y diseño estructurado son herramientas fundamentales de análisis de sistemas desarrolladas a partir de análisis de sistemas clásicos de los años 1960 y 1970.
 
-## El modelo esencial
+## 🔑 El modelo esencial
 
 El modelo esencial del sistema es un modelo de lo que el sistema debe hacer para satisfacer los requerimientos del usuario, diciendo lo mínimo posible acerca de cómo se implanta.
 
@@ -119,7 +119,7 @@ El modelo esencial consiste en dos componente principales:
 - modelo ambiental
 - modelo de comportamiento
 
-## El modelo ambiental
+## 🌍 El modelo ambiental
 
 Para el analista de sistemas, la labor más difícil en la especificación de un sistema es a menudo determinar qué es parte del sistema y qué no.
 
@@ -163,7 +163,7 @@ En un sistema grande se puede tomar en cuenta una cantidad de factores cuando se
   3. La administración pide un reporte de ventas (T).
   4. Llega un pedido de reimpresión de un libro al almacén (C).
 
-#### F,T,C - flujo, temporal, o de control
+#### 🔁⏳🎛️ F,T,C - flujo, temporal, o de control
 
 El orientado a flujos es el que se asocia con un flujo de datos; es decir, el sistema se da cuenta de que ha ocurrido el acontecimiento cuando llega algún dato (o posiblemente varios).
 Los acontecimientos temporales arrancan con la llegada de un momento dado en el tiempo.
@@ -196,12 +196,12 @@ Por ejemplo, nuestra lista de acontecimientos para el Sistema de Pedido de Libro
 
 Pero ¿Qué tal si no llega a tiempo (por ejemplo, una semana después de la fecha prometida por el impresor)? ¿Qué debería hacer el sistema?, Por lo que se necesitaría un acontecimiento adicional iniciado por el sistema para hacer que se comunique con el impresor y localice el origen del retraso.
 
-## Diagrama de contexto.
+## 🔍🔄 Diagrama de contexto.
 Es un caso especial de diagrama de flujo de datos, en donde una sola burbuja representa todo el sistema.
 La figura muestra un diagrama de contexto de un sistema de pedidos de libros.
     <img src="./resource/modulo2/img3.png">
 
-### Características importantes:
+### 🔑 Características importantes:
 1. Las personas, organizaciones y sistemas con los que se comunica el sistema. Se conocen como terminadores.
 2. Los datos que el sistema recibe del mundo exterior y que deben procesarse de alguna forma.
 3. Los datos que el sistema produce y que se envían al mundo exterior.
@@ -233,17 +233,17 @@ Punto en consideración de los terminadores:
 3. Cuando el terminador es una persona individual, generalmente es preferible indicar el rol que desempeña, más que su identidad.
 4. Dado que estamos interesados en desarrollar un modelo esencial del sistema, es importante distinguir entre fuente y manejadores.
 
-### Almacenes de datos
+### 🗄️ Almacenes de datos
 
 Un manejador es un mecanismo, dispositivo, medio físico usado para transportar datos hacia o fuera del sistema. Dado que a menudo, dichos manejadores son familiares y visibles para los usuarios de la implantación actual de un sistema, existe la tendencia a mostrar al manejador, en lugar de la verdadera fuente de los datos
 
-### Flujos
+### 🌊 Flujos
 
 - Flujos de control.-
     Los flujos que aparecen en el diagrama de contexto modelan datos que entran y salen del sistema, además de las señales de control que recibe o genera.
 - Los flujos de datos se incluyen en el diagrama de contexto si se ocupan para detectar un acontecimiento en el ambiente al que deba responder el sistema, o si se ocupan (como datos) para producir una respuesta.
 
-## El modelo de comportamiento
+## 📊 El modelo de comportamiento
 
 Dentro del modelo de comportamiento se involucró el desarrollo de un diagrama de flujo de datos y un diagrama de entidad-relación preliminares, además de la elaboración de las entradas iniciales del diccionario.
 
@@ -277,7 +277,7 @@ producidas por el proceso.
 
 En muchos casos, esto implicara devolver salidas a los terminadores fuera del sistema; sin embargo, puede también involucrar salidas que se envían a los almacenes de datos, para ser usadas como entradas de otros procesos.
 
-### Entradas y salidas de un proceso
+### 🔃 Entradas y salidas de un proceso
 
 <img src="./resource/modulo2/img7.png">
 
